@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Login and Registration Form | Income Tax Calculator</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="logo">
+                <h2>Income Tax Calculato</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div id=outer><div class='ac b'>Income Tax Calculator in India AY 2021-22</div><div id=cover>
+    <form name=it><table class=main><col class=w60><col class=w40>
+    <tr><td>Opted for Sec. 115BAC<td><select id=opt onchange=itax2122();><option value='no' selected>No<option value='yes'>Yes</select>
+    <tr class=stat><td>Select Status<td><select id=age ><option value='b60' selected>Resident < 60 years<option value='a60'>>= 60 < 80 years<option value='a80'>>= 80 years<option value=huf>HUF / NRE</select>
+    <tr><td>Income<td><input type=number id=tinc>
+    <tr><td>Eligible Deductions<td><input type=number id=ed>
+    <tr><td><button type=reset >Reset</button><td><button type=button onclick=itax2122();>Submit</button>
+    <tr><td>Taxable Income<td><input class=op id=ninc >
+    <tr><td>Income Tax<td><input class=op id=itax>
+    <tr><td>Surcharge<td><input class=op id=surch>
+    <tr><td>Education Cess<td><input class=op id=ecess>
+    <tr><td>Total Tax Liability<td><input class=op id=liab>
+    <tr><td colspan=2 style=text-align:center><br><a href='//karvitt.com/income-tax/income-tax-calculator' target=_blank><b>Use Detailed Income Tax Calculator</b></a></table></form></div></div>
+    
+    
+</body>
+</html>
